@@ -1,0 +1,62 @@
+Java Interviews questions:
+
+Ans-jvm stands for java virtual machine that executed java bytecode and translate it into java machine code in specific operating system.
+   jre stands for  java runtime environment and it is specially executed of jvm ,it is especially used for compiling the program.
+   they both are platform dependent.
+
+Ans2-JVM-java virtual machine is basically used for executing java bytecode and translate it into java machine code in specific operating system.
+    
+Ans3-The JVM divides memory into several runtime data areas, some shared among all threads and some private to each thread:
+
+	Method Area → Stores class metadata, static variables, method code.
+
+        Heap → Stores objects and instance variables.
+
+        Stack → Stores method calls and local variables.
+
+        PC Register → Keeps track of the current executing instruction.
+
+        Native Method Stack → For native (non-Java) methods.
+   
+Ans4-A Just-In-Time (JIT) compiler is a component of a runtime environment that improves the performance of programs by compiling bytecode into native machine code at runtime.
+
+
+5. How Java platform is different from other platforms?
+
+Java is platform-independent because it doesn’t compile directly to machine code.
+
+It compiles to bytecode, which runs on any system with a JVM.
+
+Other platforms (like C/C++) compile directly to machine code, so the program is tied to one OS or processor.
+
+6. Why people say that Java is ‘write once and run anywhere’?
+
+You write the code once, compile it to bytecode, and the same bytecode runs on any OS with a JVM.
+
+This is because JVM acts as a middle layer between your code and the OS.
+
+7. How does ClassLoader work in Java?
+
+ClassLoader is part of JVM responsible for loading .class files into memory.
+
+It loads, links, and initializes classes at runtime.
+
+There are three main types:
+
+Bootstrap ClassLoader – loads core Java classes (java.lang.*)
+
+Extension ClassLoader – loads classes from ext directory
+
+Application ClassLoader – loads classes from your project
+
+8. Do you think ‘main’ used for main method is a keyword in Java?
+
+No, main is not a keyword.
+
+It’s just a convention; JVM looks for public static void main(String[] args) as the entry point.
+
+9. Can we write main method as public void static instead of public static void?
+
+No, the order matters: it must be public static void.
+
+Java’s compiler strictly expects this order for the entry point.
