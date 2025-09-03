@@ -1,5 +1,31 @@
 package oops_concept;
 
-public class oops8 {
+class PalindromeChecker {
+    private String text;
 
+    public PalindromeChecker(String text) {
+        this.text = text;
+    }
+
+    public boolean isPalindrome() {
+        String reversed = new StringBuilder(text).reverse().toString();
+        return text.equalsIgnoreCase(reversed);
+    }
+
+    public void displayResult() {
+        if (isPalindrome())
+            System.out.println(text + " is a Palindrome.");
+        else
+            System.out.println(text + " is NOT a Palindrome.");
+    }
+}
+
+public class oops8 {
+    public static void main(String[] args) {
+        PalindromeChecker p1 = new PalindromeChecker("madam");
+        p1.displayResult();
+
+        PalindromeChecker p2 = new PalindromeChecker("hello");
+        p2.displayResult();
+    }
 }
