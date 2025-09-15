@@ -33,8 +33,8 @@ class Bank {
 public class problem2 {
     public static void main(String[] args) {
         Bank bank = new Bank("SBI");
-        Customer c1 = new Customer("Alice", 5000);
-        Customer c2 = new Customer("Bob", 7000);
+        Customer c1 = new Customer("Ankur", 5000);
+        Customer c2 = new Customer("ankit", 7000);
 
         bank.openAccount(c1);
         bank.openAccount(c2);
